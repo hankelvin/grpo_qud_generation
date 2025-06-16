@@ -1,0 +1,438 @@
+{"criteria2": {"1441_1_3": {"Ko": 
+                            {"altered_qud":         "What is the international cricket council doing about it?",
+                            "rationale":            "The ANS will directly and explicitly answer this QUD (i.e. the international cricket council will be investigating it). Therefore, this is a case of \"direct and explicit\".",
+                            "rationale_fine":       "Here \"it\" in the QUD refers to the allegations of attempted bribery contained in the information that the Australian Cricket Board passed to the international cricket council (ICC). Since the ANS talks about how the ICC has launched an investigation into the allegations, therefore it does answer the QUD. To decide if the QUD is a case of \"direct and explicit\" or \"unfocused\", I will need to go on to assess whether this is the Focus of the ANS. I see that the ANC already mentions the allegations and that it involved leading players, so the new information being raised in the ANS are: (i) that the ICC launched an investigation, and (ii) the allegations were of bribery attempts to throw matches in the players' Nov/Dec tour in Pakistan. The latter merely serves to provide some date and location details about the alleged bribery, whereas the launch of the investigation is a more substantial piece of new information, thereby making it the Focus of the ANS. Based on this, I conclude that this QUD is a case of \"direct and explicit\".", 
+                            "new_score":            1.0,
+                            "original_qud":         "What is the international cricket council doing about it?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What is the international cricket council doing about it?",
+                            "cot_altered2top_score":     "Since this QUD has the maximum score. There is no need to rewrite it.",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+                            
+                            "alpaca": 
+                            {"altered_qud":         "Which country's players were offered bribes to throw matches?",
+                            "rationale":            "The answer to this QUD can be found in the ANS (i.e. \"Australian players\"), but it is not the Focus of the ANS (which is about the launching of an investigation by the ICC). Therefore, this is a case of \"unfocused\".",
+                            "rationale_fine":       "The ANS mentions that \"Australian players\" were allegedly bribed, therefore it does answer the QUD. To decide if the QUD is a case of \"direct and explicit\" or \"unfocused\", I will need to go on to assess whether this information (\"Australian players\") is the Focus of the ANS. While it is indeed new information that is first raised in the ANS, it is merely a minor detail about the alleged bribery; compared to the similarly new but more subtantial information in the ANS about the ICC launching an investigation, \"Australian players\" is not the Focus of the ANS. Therefore, this QUD is a case of \"unfocused\".", 
+                            "new_score":            2.0,
+                            "original_qud":         "What action has the ICC taken in response to the allegations?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What action has the ICC taken in response to the allegations?",
+                            "cot_altered2top_score":     "Although what this QUD is asking for can be answered by the ANS, it is by a part of the ANS that is not its Focus, therefore I must rewrite the QUD entirely so that the new QUD is one that can be answered by the ANS' Focus. Firstly, I see that the focus of the ANS is this: the investigation that the ICC launched into the allegations of bribery (that the Australian Cricket Board had alerted the ICC about). I know that: {{criteria_recap}}. With this knowledge, I will form this new QUD to ask for it: {{top_score_qud}} ",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+                            
+                            "chatgpt": 
+                            {"altered_qud":         "Who are the parties alleged to have offered the bribes?",
+                            "rationale":            "The answer to this QUD cannot be found in the ANS. The ANS talks about what the ICC will do and discusses some details of the bribery allegations (i.e. who the bribes were offered to and when), but it does not mention who is alleged to have made the bribes. Therefore, this is a case of \"not answered\".",
+                            "rationale_fine":       "I can see that the ANS does not have any information to resolve this QUD -- it mentions that the bribes were allegedly made to leading Australian players, but ANS does not mention who was alleged to have offered the bribes. Therefore, this QUD is a case of \"not answered\".", 
+                            "new_score":            3.0,
+                            "original_qud":         "What is the ICC's response to the alleged attempt to bribe Australian cricket players?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What is the ICC's response to the alleged attempt to bribe Australian cricket players?",
+                            "cot_altered2top_score":     "Since the answer to this QUD cannot be found in the ANS, I will need to completely rewrite it. Firstly, I see that the focus of the ANS is this: the investigation that the ICC launched into the allegations of bribery (to leading Australian players). I know that: {{criteria_recap}}. With this knowledge, I will form this new QUD to ask for it: {{top_score_qud}} ",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+
+                            "gpt4": 
+                            {"altered_qud":         "When were the bribe attempts allegedly made?",
+                            "rationale":            "The answer to this QUD can be found in the ANS (i.e. \"during their October-November tour of Pakistan\"), but it is not the Focus of the ANS (which is about the launching of an investigation by the ICC). Therefore, this is a case of \"unfocused\".",
+                            "rationale_fine":       "The ANS mentions that the bribes were allegedly offered during the Australian players' tour in Pakistan in October-November, so it does answer the QUD. To decide if the QUD is a case of \"direct and explicit\" or \"unfocused\", I will need to assess if this information (\"during their October-November tour of Pakistan\") is the focus of the ANS. However, this is merely a minor detail about the alleged bribery; compared to the similarly new and more subtantial information in the ANS about the ICC launching an investigation, this is not the Focus of the ANS. Therefore, this QUD is a case of \"unfocused\". ", 
+                            "new_score":            2.0,
+                            "original_qud":         "What action has the International Cricket Council taken in response to the alleged bribery of Australian players?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What action has the International Cricket Council taken in response to the alleged bribery of Australian players?",
+                            "cot_altered2top_score":     "Although what this QUD is asking for can be answered by the ANS, it is by a part of the ANS that is not its Focus, therefore I must rewrite the QUD entirely so that the new QUD is one that can be answered by the ANS' Focus. Firstly, I see that the focus of the ANS is this: the investigation that the International Cricket Council launched into the allegations of bribery. I know that: {{criteria_recap}}. With this knowledge, I will form this new QUD to ask for it: {{top_score_qud}} ",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            }},   
+
+               "1498_4_5": {"Ko": 
+                            {"altered_qud":         "What was the cause of the bighorn sheep going to the brink of extinction?",
+                            "rationale":            "The answer to this QUD cannot be found in the ANS. The ANS discusses how unlikely it is that species put on the endangered list are to recover from near extinction, but it does not talk about who or what caused the near extinction of the bighorn sheep. Therefore, this is a case of \"not answered\".",
+                            "rationale_fine":       "I can see that the ANS does not have any information to resolve this QUD -- it carries a quote from the biologist about the rarity to date of endangered species coming back from the brink of extinction and what the bighorn sheep's population increase could suggest, but it does not mention the cause of the near-extinction of the bighorn sheep. Therefore, this QUD is a case of \"not answered\".",
+                            "new_score":            3.0,
+                            "original_qud":         "What does this mean for the future of the bighorn sheep?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What does this mean for the future of the bighorn sheep?",
+                            "cot_altered2top_score":     "Since the answer to this QUD cannot be found in the ANS, I will need to completely rewrite it. Firstly, I see that the focus of the ANS is this: there is a real opportunity to save the bighorn sheep as a species. I know that: {{criteria_recap}}. With this knowledge, I will form this new QUD to ask for it: {{top_score_qud}} ",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+
+                            "alpaca": 
+                            {"altered_qud":         "What other species have been able to avoid extinction?",
+                            "rationale":            "The answer to this QUD cannot be found in the ANS. The ANS discusses how unlikely species put an endangered list are to recover from near extinction, but it does not mention what other species have been saved from the brink of extinction. Therefore, this is a case of \"not answered\".",
+                            "rationale_fine":       "I can see that the ANS does not have any information to resolve this QUD -- it carries a quote from the biologist about the rarity to date of endangered species coming back from the brink of extinction and what the bighorn sheep's population rebound could suggest, but it does not mention which, if any, other species were able to avoid extinction. Therefore, this QUD is a case of \"not answered\".", 
+                            "new_score":            3.0,
+                            "original_qud":         "What is the significance of the Sierra Nevada bighorn sheep's return to the Great Western Divide?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What is the significance of the Sierra Nevada bighorn sheep's return to the Great Western Divide?",
+                            "cot_altered2top_score":     "Since the answer to this QUD cannot be found in the ANS, I will need to completely rewrite it. Firstly, I see that the focus of the ANS is this: there is a real opportunity to save the bighorn sheep as a species. I know that: {{criteria_recap}}. With this knowledge, I will form this new QUD to ask for it: {{top_score_qud}} ",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+
+                            "chatgpt": 
+                            {"altered_qud":         "How likely has it been for species put on the endangered list to be subsequently saved from extinction?",
+                            "rationale":            "The answer to this QUD can be found in the ANS (i.e. \"Most species that end up on the endangered species list don't ever come off\"), but it is not the Focus of the ANS (i.e. that there is a meaningful chance for endangered species to come back from the brink of extinction given the experience with saving the bighorn sheep population). Therefore, this is a case of \"unfocused\".",
+                            "rationale_fine":       "The ANS does carry a quote from the biologist saying how \"most species that end up on the endangered species list don't ever come off\", so it does resolve the QUD. To decide if the QUD is a case of \"direct and explicit\" or \"unfocused\", I will need to assess if this information is the focus of the ANS. The Focus of the ANS is however, that \"there's a real opportunity here to see success\" (in the saving of endangered species going forward) and not how likely it has been. Therefore, this QUD is a case of \"unfocused\". ", 
+                            "new_score":            2.0,
+                            "original_qud":         "What is the significance of the successful reintroduction of bighorn sheep in the Great Western Divide?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What is the significance of the successful reintroduction of bighorn sheep in the Great Western Divide?",
+                            "cot_altered2top_score":     "Although what this QUD is asking for can be answered by the ANS, it is by a part of the ANS that is not its Focus, therefore I must rewrite the QUD entirely so that the new QUD is one that can be answered by the ANS' Focus. Firstly, I see that the focus of the ANS is this: there is a real opportunity to save the bighorn sheep as a species. I know that: {{criteria_recap}}.  With this knowledge, I will form this new QUD to ask for it: {{top_score_qud}} ",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+
+                            "gpt4": 
+                            {"altered_qud":         "What does the successful increase in the number of Sierra Nevada bighorn sheep signify for endangered species?",
+                            "rationale":            "The ANS will directly and explicitly answer this QUD (i.e. there's a real opportunity here to see success in saving endangered species given the experience with repopulating the bighorn sheep). Therefore, this is a case of \"direct and explicit\".",
+                            "rationale_fine":       "The ANS carries a quote from the biologist saying that \"there's a real opportunity here to see success\" for saving endangered species given what has been accomplished with the bighorn sheep population. This is the Focus of the ANS and so this QUD is a case of \"direct and explicit\".", 
+                            "new_score":            1.0,
+                            "original_qud":         "What does the successful increase in the number of Sierra Nevada bighorn sheep signify for endangered species?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What does the successful increase in the number of Sierra Nevada bighorn sheep signify for endangered species?",
+                            "cot_altered2top_score":     "Since this QUD has the maximum score. There is no need to rewrite it.",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            }
+                            },
+                            
+               "906_1_2": {"Ko": 
+                            {"altered_qud":         "What did the student do when his school principal approached him about seeking help for mental illness?",
+                            "rationale":            "The ANS will directly and explicitly answer this QUD (i.e. the student said he did not need such help and declined to do so). Therefore, this is a case of \"direct and explicit\".",
+                            "rationale_fine":       "The ANS mentions that the student declined when his school principal asked him about seeking such help, therefore it does answer the QUD. To decide if the QUD is a case of \"direct and explicit\" or \"unfocused\", I will need to assess if this information is the focus of the ANS. Here, the \"end-focus principle\" in English grammar might help -- it indicates that the most important information in a clause or sentence is often placed towards its end. In this instance, the student's declining of help for mental illness, which is mentioned at the end of the sentence, is the Focus of the ANS and so this QUD is a case of \"direct and explicit\".", 
+                            "new_score":            1.0,
+                            "original_qud":         "What did the student do when his school principal approached him about seeking help for mental illness?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What did the student do when his school principal approached him about seeking help for mental illness?",
+                            "cot_altered2top_score":     "Since this QUD has the maximum score. There is no need to rewrite it.",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+                            
+                            "alpaca": {
+                            "altered_qud":          "Did the student go on to cause further harm to himself or others?",
+                            "rationale":            "The answer to this QUD cannot be found in the ANS. The ANS talks about how the student declined to seek help for mental illness when he was asked by his school principal about doing so. It does not mention whether the student caused further harm to himself or others. Therefore, this is a case of \"not answered\".",
+                            "rationale_fine":       "I can see that the ANS does not have any information to resolve this QUD -- it talks about how the student's school principal approached him and suggested he seek help for mental illness, which he then declined; but it does not mention whether the student did anything else to cause himself or others harm. Therefore, this QUD is a case of \"not answered\".", 
+                            "new_score":            3.0,
+                            "original_qud":         "What was the teen's initial reaction when his assistant principal approached him about seeking help for mental illness?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What was the teen's initial reaction when his assistant principal approached him about seeking help for mental illness?",
+                            "cot_altered2top_score":     "Since the answer to this QUD cannot be found in the ANS, I will need to completely rewrite it. Firstly, I see that the focus of the ANS is this: the student's declining to seek help for mental illness. I know that: {{criteria_recap}}. With this knowledge, I will form this new QUD to ask for it: {{top_score_qud}} ",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+                           
+                            "chatgpt": 
+                            {"altered_qud":         "What was the teen's initial response when approached about seeking help for mental illness?",
+                            "rationale":            "The ANS will directly and explicitly answer this QUD (i.e. the student initially told his school principal he did not need help for mental illness and declined to seek such help). Therefore, this is a case of \"direct and explicit\".",
+                            "rationale_fine":       "The ANS mentions that the student \"initially declined\", therefore it does answer the QUD. To decide if the QUD is a case of \"direct and explicit\" or \"unfocused\", I will need to assess if this information is the focus of the ANS. Here, the \"end-focus principle\" in English grammar might be helpful -- it indicates that the most important information in a clause or sentence is usually placed towards its end. In this instance, the student's declining of help for mental illness, which is mentioned at the end of the sentence, is the Focus of the ANS and so this QUD is a case of \"direct and explicit\".", 
+                            "new_score":            1.0,
+                            "original_qud":         "What was the teen's initial response when approached about seeking help for mental illness?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What was the teen's initial response when approached about seeking help for mental illness?",
+                            "cot_altered2top_score":     "Since this QUD has the maximum score. There is no need to rewrite it.",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+                           
+                            "gpt4": 
+                            {"altered_qud":         "When did the student's school principal ask him about seeking help for mental illness?",
+                            "rationale":            "The answer to this QUD can be found in the ANS (i.e. \"a few months ago\"), but it is not the Focus of the ANS (which is that the student initially declined to seek help for mental illness when asked by his school principal). Therefore, this is a case of \"unfocused\".",
+                            "rationale_fine":       "The ANS does mention that the school principal asked the student \"a few months ago\", so it does answer the QUD. To decide if the QUD is a case of \"direct and explicit\" or \"unfocused\", I will need to assess if this information is the focus of the ANS. The Focus is however, that \"the student initially declined\" seeking help for mental illness. Therefore, this QUD is a case of \"unfocused\". ",
+                            "new_score":            2.0,
+                            "original_qud":         "What was the teenager's initial response when the assistant principal suggested he seek help for mental illness?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What was the teenager's initial response when the assistant principal suggested he seek help for mental illness?",
+                            "cot_altered2top_score":     "Although what this QUD is asking for can be answered by the ANS, it is by a part of the ANS that is not its Focus, therefore I will need to completely rewrite it. Firstly, I see that the focus of the ANS is this: the student's declining to seek help for mental illness. I know that: {{criteria_recap}}. With this knowledge, I will form this new QUD to ask for it: {{top_score_qud}} ",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            }
+                            }},
+ 
+"criteria3": {"1441_1_3": {"Ko": 
+                            {"altered_qud":         "What is the international cricket council doing about the resulting media reports?",
+                            "rationale":            "This QUD refers to the \"international cricket council\", which was mentioned in the ANC and is therefore fine. However, it asks about what the council is doing about the \"resulting media reports\", but this -- the \"resulting media reports\": (i) has not been mentioned in the CTX or ANC, (ii) is also not Mediated, and (iii) does not appear in the ANS and so is not a case of answer leakage. Therefore, this is a case of \"hallucination\".",
+                            "rationale_fine":       "The concepts mentioned in the QUD are: (i) the international cricket council, and (ii) the resulting media reports. The first concept (i) has already been mentioned in the ANC (i.e. it is Discourse-Old); but the second has not been mentioned in the CTX or the ANC -- it also has no relation to any of the concepts mentioned already, so it cannot be easily inferred. In order to decide if this is a case of \"answer-leakage\" or \"hallucination\", I need to check if \"resulting media reports\" is mentioned in the ANS. I can see that this is not the case, therefore, this QUD is a case of \"hallucination\".", 
+                            "new_score":            3.0,
+                            "original_qud":         "What is the international cricket council doing about it?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What is the international cricket council doing about it?",
+                            "cot_altered2top_score":     "Since this QUD is a case of hallucination and the part of it that is hallucinated is \"resulting media reports\", I can improve it by removing this part from the new QUD. I know that: {{criteria_recap}}. With this knowledge, I propose this new QUD: {{top_score_qud}}",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+
+                            "alpaca": 
+                            {"altered_qud":         "What action has the ICC taken in response to the allegations of the bribery attempts to throw the matches during their Pakistan tour?",
+                            "rationale":            "This QUD refers to the ICC and the allegations, which has been mentioned in the ANC. However, it mentions \"to throw the matches during their Pakistan tour\". This is a new concept that is not found in, or easily inferrable from, the CTX or ANC (i.e. not Discourse-Old nor Mediated). However, (i) it is subsequently mentioned in the ANS and (ii) besides this answer leakage, the QUD does not introduce any other new concepts. Therefore, this is a case of \"answer-leakage\".",
+                            "rationale_fine":       "The concepts mentioned in the QUD are: (i) the ICC, (ii) the allegations of bribery attempts; and (iii) matches during the players' Pakistan tour. The concept corresponding to \"action taken by the ICC\" in the QUD is what's being queried for, so we do not need to consider it. The first two concepts -- (i) and (ii) -- have been mentioned in the ANC (i.e. they are Discourse-Old); but the last concept (iii) has not been mentioned or can be easily inferred from the CTX and ANC. In order to decide if this is a case of \"answer-leakage\" or \"hallucination\", I need to check if \"the matches during their Pakistan tour\" is mentioned in the ANS. I can see that it is mentioned in the ANS, therefore, this QUD is a case of \"answer-leakage\".", 
+                            "new_score":            2.0,
+                            "original_qud":         "What action has the ICC taken in response to the allegations?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What action has the ICC taken in response to the allegations?",
+                            "cot_altered2top_score":     "Since there is leakage of the ANS in this QUD, and the part of it that is leaked is \" to throw the matches during their Pakistan tour\", I can improve it by removing this part from the new QUD. I know that: {{criteria_recap}}. With this knowledge, I propose this new QUD: {{top_score_qud}}",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+                            
+                            "chatgpt": 
+                            {"altered_qud":         "What is the ICC's response to the alleged attempt to bribe Australian cricket players?",
+                            "rationale":            "This QUD only mentions Discourse-Old or Mediated concepts already raised in the CTX and ANC (the alleged attempt to bribe Australian cricket players and the ICC's involvement). Therefore, this is a case of \"no new concepts\".",
+                            "rationale_fine":       "The concepts mentioned in the QUD are: (i) the ICC, and (ii) the alleged attempt to bribe Australian cricket players. All of these have already been raised in the ANC (i.e. they are Discourse-Old). Therefore, this QUD is a case of \"no new concepts\".",
+                            "new_score":            1.0,
+                            "original_qud":         "What is the ICC's response to the alleged attempt to bribe Australian cricket players?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What is the ICC's response to the alleged attempt to bribe Australian cricket players?",
+                            "cot_altered2top_score":     "Since this QUD has the maximum score. There is no need to rewrite it.",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+
+                            "gpt4": 
+                            {"altered_qud":         "How did the ICC react to the alleged bribery of Australian players during their October/November tour?",
+                            "rationale":            "This QUD mentions \"in their October/November tour\". This is a new concept not found in, or easily inferrable from, the CTX or ANC. However, (i) it is subsequently mentioned in the ANS and (ii) besides this answer leakage, the QUD does not introduce any other new concepts. Therefore, this is a case of \"answer-leakage\".",
+                            "rationale_fine":       "The concepts mentioned in the QUD are: (i) the ICC, and (ii) alleged bribery of Australian players during their October/November tour. The concept corresponding to \"reaction of the ICC\" in the QUD is what's being queried for, so we do not need to consider it. While the ICC and the alleged bribery have already been raised in the ANC (i.e. Discourse-Old), the detail about the alleged bribery taking place during the players' October/November tour has not been mentioned in the CTX or the ANC, and it is a specific detail that cannot be easily inferred from the concepts already mentioned there. In order to decide if this is a case of \"answer-leakage\" or \"hallucination\", I need to check if \"during their October/November tour\" is mentioned in the ANS. I can see that it is mentioned in the ANS, therefore, this QUD is a case of \"answer-leakage\".",
+                            "new_score":            2.0,
+                            "original_qud":         "What action has the International Cricket Council taken in response to the alleged bribery of Australian players?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What action has the International Cricket Council taken in response to the alleged bribery of Australian players?",
+                            "cot_altered2top_score":     "Since there is leakage of the ANS in this QUD, and the part of it that is leaked is \" during their October/November tour\", I can improve it by removing this part from the new QUD. I know that: {{criteria_recap}}. With this knowledge, I propose this new QUD: {{top_score_qud}}",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            }},
+
+               "1498_4_5": {"Ko": 
+                            {"altered_qud":         "What does this mean for the future of the bighorn sheep given that most species put on the endangered list stay endangered?",
+                            "rationale":            "This QUD mentions \"most species put on the endangered list stay endangered\". This is a new concept not found in, or easily inferrable from, the CTX or ANC (i.e. not Discourse-Old nor Mediated). However, (i) it is subsequently mentioned in the ANS and (ii) besides this answer leakage, the QUD does not introduce any other new concepts. Therefore, this is a case of \"answer-leakage\".",
+                            "rationale_fine":       "This QUD mentions the following concepts: (i) the bighorn sheep; and that (ii) most species put on the endangered list stay endangered. The concept corresponding to \"what it means for the future of the sheep\" in the QUD is what's being queried for, so we do not need to consider it. The first concept (i) has been mentioned in the CTX and ANC, but (ii) has not been and cannot be easily inferred from the concepts already mentioned there. In order to decide if this is a case of \"answer-leakage\" or \"hallucination\", I need to check if \"most species put on the endangered list stay endangered\" is mentioned in the ANS. I can see that it is mentioned in the ANS, therefore, this QUD is a case of \"answer-leakage\".", 
+                            "new_score":            2.0,
+                            "original_qud":         "What does this mean for the future of the bighorn sheep?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What does this mean for the future of the bighorn sheep?",
+                            "cot_altered2top_score":     "Since there is leakage of the ANS in this QUD, and the part of it that is leaked is \"  given that most species put on the endangered list stay endangered\", I can improve it by removing this part from the new QUD. I know that: {{criteria_recap}}. With this knowledge, I propose this new QUD: {{top_score_qud}}",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+
+                            "alpaca": 
+                            {"altered_qud": "What is the significance of the rarity of the kind of species revivals such as the Sierra Nevada bighorn sheep's return to the Great Western Divide?",
+                            "rationale": "This QUD mentions \"the rarity of the kind of species revivals such as...\". This is a new concept not found in, or easily inferrable from, the CTX or ANC (i.e. not Discourse-Old nor Mediated). However, (i) it is subsequently mentioned in the ANS and (ii) besides this answer leakage, the QUD does not introduce any other new concepts. Therefore, this is a case of \"answer-leakage\".",
+                            "rationale_fine":       "This QUD mentions the following concepts: (i) the rarity of this kind of species revivals; (ii) the Sierra Nevada bighorn sheep; and (iii) the bighorn sheep's return to the Great Western Divide. The concept corresponding to \"the significance of the rarity of...\" in the QUD is what's being queried for, so we do not need to consider it. The concepts (ii) and (iii) have been mentioned in the CTX, but (i) has not been. In order to decide if this is a case of \"answer-leakage\" or \"hallucination\", I need to check if concept (i) \"the rarity of the kind of species revivals\" is mentioned in the ANS. I can see that it is mentioned in the ANS (i.e. \"Most species that end up on the endangered species list don't ever come off\"), therefore, this QUD is a case of \"answer-leakage\".", 
+                            "new_score":            2.0,
+                            "original_qud":         "What is the significance of the Sierra Nevada bighorn sheep's return to the Great Western Divide?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What is the significance of the Sierra Nevada bighorn sheep's return to the Great Western Divide?",
+                            "cot_altered2top_score":     "Since there is leakage of the ANS in this QUD, and the part of it that is leaked is \"  the rarity of the kind of species revivals\", I can improve it by removing this part from the new QUD. I know that: {{criteria_recap}}. With this knowledge I propose this new QUD: {{top_score_qud}}",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+
+                            "chatgpt": 
+                            {"altered_qud":         "What is the significance of the successful reintroduction of bighorn sheep in the Great Western Divide by the California Department of Fish and Wildlife?",
+                            "rationale":            "This QUD mentions \"by the California Department of Fish and Wildlife\", but this (i) has not been mentioned in the CTX or ANC, (ii) is also not Mediated, and (iii) does not appear in the ANS and so is not a case of answer leakage. Therefore, this is a case of \"hallucination\".",
+                            "rationale_fine":       "This QUD mentions the following concepts: (i) \"the successful reintroduction of bighorn sheep\"; (ii) \"in the Great Western Divide\"; and (iii) \"by the California Department of Fish and Wildlife\". The concept corresponding to \"the significance of the...\" in the QUD is what's being queried for, so we do not need to consider it. The concept (iii) is not mentioned in the CTX or ANC. I also do not see it mentioned in the ANS so it is not a case of \"answer-leakage\". Therefore, this QUD is a case of \"hallucination\".", 
+                            "new_score":            3.0,
+                            "original_qud":         "What is the significance of the successful reintroduction of bighorn sheep in the Great Western Divide?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What is the significance of the successful reintroduction of bighorn sheep in the Great Western Divide?",
+                            "cot_altered2top_score":     "Since this QUD is a case of hallucination and the part of it that is hallucinated is \"by the California Department of Fish and Wildlife\", I can improve it by removing this part from the new QUD. I know that: {{criteria_recap}}. With this knowledge I propose this new QUD: {{top_score_qud}} ",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+
+                            "gpt4": 
+                            {"altered_qud":         "What does the successful increase in the number of Sierra Nevada bighorn sheep signify for endangered species?",
+                            "rationale":            "This QUD only mentions Discourse-Old or Mediated concepts already raised in the CTX and ANC (namely: (i) that the sheep population increased from 105 to 500 in 15 years, and (ii) that it was a case of human intervention bringing a nearly extinct species back). Therefore, this is a case of \"no new concepts\".",
+                            "rationale_fine":       "This QUD mentions the following concepts: (i) \"successful increase in the number of Sierra Nevada bighorn sheep\"; and (ii) \"endangered species\". The concept corresponding to \"signify for...\" in the QUD is what's being queried for, so we do not need to consider it. All of this two concepts were mentioned in, or can be inferred from, the CTX -- namely, \"Today, they number more than 500 ...\" and \"... marks a dual milestone - it's the first time bighorn sheep have ...\" for (i); as well as \"... bring the species back from the brink of extinction ...\" for (ii). Therefore, this QUD is a case of \"no new concepts\".",
+                            "new_score":            1.0,
+                            "original_qud":         "What does the successful increase in the number of Sierra Nevada bighorn sheep signify for endangered species?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What does the successful increase in the number of Sierra Nevada bighorn sheep signify for endangered species?",
+                            "cot_altered2top_score":     "Since this QUD has the maximum score. There is no need to rewrite it.",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            }
+                            },
+
+               "906_1_2": {"Ko": 
+                            {"altered_qud":         "What did the student do when his assistant principal approached him about seeking help for mental illness?",
+                            "rationale":            "There is answer leakage in this QUD because it mentions \"when his assistant principal approached him about seeking help for mental illness\". This contains new concepts that are not found in, or easily inferrable from, the CTX or ANC (i.e. not Discourse-Old nor Mediated). However, it is subsequently mentioned in the ANS and besides this answer leakage, the QUD does not introduce any other new concepts. Therefore, this is a case of \"answer-leakage\".",
+                            "rationale_fine":       "This QUD mentions the following concepts: (i) the student, (ii) his assistant principal, (iii) the assistant principal's approaching of the student about seeking help for mental illness. The concept corresponding to \"what did the student do...\" in the QUD is what's being queried for, so we do not need to consider it. The student has already been mentioned in the ANC so this concept is Discourse-Old. However, concepts (ii) and (iii) are not found in the CTX and ANC and cannot be easily inferred from what has been mentioned there. In order to decide if this is a case of \"answer-leakage\" or \"hallucination\", I need to check if these two concepts (ii) and (iii) are mentioned in the ANS. I can see that they are mentioned in the ANS (i.e. \"the teen's assistant principal approached him a few months ago about seeking help for mental illness\"), therefore, this QUD is a case of \"answer-leakage\".", 
+                            "new_score":            2.0,
+                            "original_qud":         "What did the student do when his assistant principal approached him about seeking help for mental illness?",
+                            "original_score":       2.0,
+                            "top_score_qud":             "Did the student get or seek help for his difficulties?",
+                            "cot_altered2top_score":     "Since there is leakage of the ANS in this QUD, and the part of it that is leaked is: the assistant principal's approaching of the student about seeking help for mental illness, I should not mention it in the new QUD. I know that: {{criteria_recap}}. I will do a rewrite to give this new QUD: {{top_score_qud}}",
+                            "cot_original2top_score":    "Since there is leakage of the ANS in this QUD, and the part of it that is leaked is: the assistant principal's approaching of the student about seeking help for mental illness, I should not mention it in the new QUD. I know that: {{criteria_recap}}. I will do a rewrite to give this new QUD: {{top_score_qud}}"
+                            },
+
+                           "alpaca": 
+                           {"altered_qud":          "Did anyone from the student's school try to help him?",
+                            "rationale":            "This QUD only mentions Discourse-Old or Mediated concepts already raised in the CTX and ANC. This is because the established ground already mentions the student's difficult response to his father's cancer diagnosis that included skipping school and yelling at teachers, so it is reasonable to wonder if anyone from the student's school has tried to help him. Therefore, this is a case of \"no new concepts\".",
+                            "rationale_fine":       "This QUD mentions the following concepts: (i) the student, and (ii) his school. The concept corresponding to \"anyone ... try to help him\" is what's being queried for, so we do not need to consider it. The student has already been mentioned in the ANC so this concept is Discourse-Old, whereas the ANC also mentions the student skipping school and yelling at teachers, so the concept of his school is Mediated. Therefore, this QUD is a case of \"no new concepts\".", 
+                            "new_score":            1.0,
+                            "original_qud":         "What was the teen's initial reaction when his assistant principal approached him about seeking help for mental illness?",
+                            "original_score":       2.0,
+                            "top_score_qud":             "Did anyone from the student's school try to help him?",
+                            "cot_altered2top_score":     "Since this QUD has the maximum score. There is no need to rewrite it.",
+                            "cot_original2top_score":    "Since there is leakage of the ANS in this QUD, and the part of it that is leaked is: when his (the teen's) assistant principal approached him about seeking help for mental illness, I should not mention it in the new QUD. I know that: {{criteria_recap}}. I will do a rewrite to give this new QUD: {{top_score_qud}}"
+                            },
+
+                           "chatgpt": 
+                           {"altered_qud":          "What did the student get diagnosed with?",
+                            "rationale":            "This QUD asks about a diagnosis for the student, but this (i) has not been mentioned in the CTX or ANC, (ii) is also not Mediated, and (iii) does not appear in the ANS and so is not a case of answer leakage. Therefore, this is a case of \"hallucination\".",
+                            "rationale_fine":       "This QUD mentions the following concepts: (i) the student, and (ii) a diagnosis. The concept corresponding to \"what diagnosis\" in the QUD is what's being queried for, so we do not need to consider it. The student has already been mentioned in the ANC so this concept is Discourse-Old. However, there is no mention of a diagnosis in the CTX or ANC, nor is there any concept there that might make it easily inferrable (for e.g. mention of a visit to a doctor or therapist). In order to decide if this is a case of \"answer-leakage\" or \"hallucination\", I need to check if this concept (a diagnosis) is mentioned in the ANS. I can see that it is not. Therefore, this QUD is a case of \"hallucination\".", 
+                            "new_score":            3.0,
+                            "original_qud":         "What was the teen's initial response when approached about seeking help for mental illness?",
+                            "original_score":       2.0,
+                            "top_score_qud":             "Is the teenager being offered help?",
+                            "cot_altered2top_score":     "Since this QUD is a case of hallucination and the part of it that is hallucinated is \"some diagnosis for the student\", I can improve it by removing this part from the new QUD. I know that: {{criteria_recap}}. With this knowledge I propose this new QUD: {{top_score_qud}} ",
+                            "cot_original2top_score":    "Since there is leakage of the ANS in this QUD, and the part of it that is leaked is: when the teen was approached about seeking help for mental illness, I should not mention it in the new QUD. I know that: {{criteria_recap}}. I will do a rewrite to give this new QUD: {{top_score_qud}}"
+                            },
+
+                           "gpt4": 
+                           {"altered_qud":          "What was the teenager's initial response when the assistant principal suggested he seek help for mental illness?",
+                            "rationale":            "There is answer leakage in this QUD because it mentions \"when the assistant principal suggested ...\". This contains a new concept not found in, or easily inferrable from, the CTX or ANC (i.e. not Discourse-Old nor Mediated). However, it is subsequently mentioned in the ANS and besides this answer leakage, the QUD does not introduce any other new concepts. Therefore, this is a case of \"answer-leakage\".",
+                            "rationale_fine":       "This QUD mentions the following concepts: (i) the teenager, (ii) the assistant principal; and (iii) a suggestion by the principal for the teen to seek mental health help . The concept corresponding to \"the teenager's initial response\" in the QUD is what's being queried for, so we do not need to consider it. The teenager is mentioned in the ANC, so this concept is Discourse-Old. However, the concepts (ii) and (iii) are not mentioned there and are not easily inferrable from concepts already mentioned there. In order to decide if this is a case of \"answer-leakage\" or \"hallucination\", I need to check if these concepts (the assistant principal and his/her suggestion to seek mental health help) are mentioned in the ANS. I can see that they are mentioned in the ANS. Therefore, this QUD is a case of \"answer-leakage\".", 
+                            "new_score":            2.0,
+                            "original_qud":         "What was the teenager's initial response when the assistant principal suggested he seek help for mental illness?",
+                            "original_score":       2.0,
+                            "top_score_qud":             "Is the teenager being offered help?",
+                            "cot_altered2top_score":     "Since there is leakage of the ANS in this QUD, and the part of it that is leaked is: when the teen was approached by his assistant principal about seeking help for mental illness, I should not mention it in the new QUD. I know that: {{criteria_recap}}. I will do a rewrite to give this new QUD: {{top_score_qud}}",
+                            "cot_original2top_score":    "Since there is leakage of the ANS in this QUD, and the part of it that is leaked is: when the teen was approached by his assistant principal about seeking help for mental illness, I should not mention it in the new QUD. I know that: {{criteria_recap}}. I will do a rewrite to give this new QUD: {{top_score_qud}}"
+                            }
+                            }},
+
+ "criteria4": {"1441_1_3": {"Ko": 
+                            {"altered_qud":         "What is the international cricket council doing about it?",
+                            "rationale":            "The international cricket council and the allegations of bribery (using the referring expression \"it\") have already been mentioned in the ANC. Therefore, this QUD's contents mostly follows from the ANC and so a reader could raise this QUD after having read up to the ANC. This is a case of \"fully grounded\".",
+                            "rationale_fine":       "This QUD is asking for how the international cricket council is responding to the allegations of bribery (using the referring expression \"it\"). These key concepts in the QUD -- (i) the international cricket council, and (ii) the allegations of bribery -- are mentioned in the ANC which mean that all of the content of this QUD follows from the ANC. Therefore, this QUD is a case of \"fully grounded\".", 
+                            "new_score":            1.0,
+                            "original_qud":         "What is the international cricket council doing about it?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What is the international cricket council doing about it?",
+                            "cot_altered2top_score":     "Since this QUD has the maximum score. There is no need to rewrite it.",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+
+                            "alpaca": 
+                            {"altered_qud":         "What action has the ICC taken in December in response to the allegations?",
+                            "rationale":            "The ICC and bribery allegation has already been mentioned in the ANC, but \"in December\" has not been. Therefore, only some of this QUD's contents follows from the ANC. This is a case of \"partially grounded\".",
+                            "rationale_fine":       "The QUD is asking for how the international cricket council (ICC) is responding to the allegations of bribery. However, it is specifically asking what action the ICC took in December. Although the key information -- (i) the international cricket council, and (ii) the allegations of bribery -- is mentioned in the ANC, there is no mention of/referenece to the concept \"in December\" in the ANC. As such, only some content in this QUD is grounded in the ANC and this is a case of \"partially grounded\".",
+                            "new_score":            2.0,
+                            "original_qud":         "What action has the ICC taken in response to the allegations?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What action has the ICC taken in response to the allegations?",
+                            "cot_altered2top_score":     "Since this QUD is a case of \"partially grounded\" and this information is not found in the ANC: some action taken in December, I should not mention it in the new QUD. I know that: {{criteria_recap}}. I will do a rewrite to give this new QUD: {{top_score_qud}}",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+
+                            "chatgpt": 
+                            {"altered_qud":         "What is the ICC's response to the alleged attempt to bribe Australian cricket players?",
+                            "rationale":            "The ICC and bribery allegation has already been mentioned in the ANC. Therefore, this QUD's contents mostly follows from the ANC and it is possible that a reader could raise this QUD after having read up to the ANC. This is a case of \"fully grounded\".",
+                            "rationale_fine":       "This QUD is asking for how the international cricket council (ICC) is responding to the allegations of bribery. It also mentions that the attempt was to bribe Australian cricket players; which can also be found in the ANC (which states the Australian Cricket Board passed information about the alleged attempt to bribe (its) leading players to the ICC). All of this information is mentioned in the ANC, and so all of the content of this QUD follows from the ANC. Therefore, this QUD is a case of \"fully grounded\".",
+                            "new_score":            1.0,
+                            "original_qud":         "What is the ICC's response to the alleged attempt to bribe Australian cricket players?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What is the ICC's response to the alleged attempt to bribe Australian cricket players?",
+                            "cot_altered2top_score":     "Since this QUD has the maximum score. There is no need to rewrite it.",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+
+                            "gpt4": 
+                            {"altered_qud":         "Why did the police department's financial crimes investigators call about the bribery allegations?",
+                            "rationale":            "This QUD mentions \"police department's financial crimes investigators\" and \"a call\" which are not found in the ANC at all. Therefore, the content of this QUD does not follow from the ANC and a reader is unlikely to raise the QUD at the point immediately after the ANC. This is a case of \"not grounded\".",
+                            "rationale_fine":       "This QUD asking for the cause(s) of the police department's financial crimes investigators to call regarding the bribery allegations. Although the bribery allegations are mentioned in the ANC, the \"police department's financial crimes investigators\" and a \"call\" are not. Hence, most of the information is not found in the ANC, i.e. the content of this QUD mostly does not follow from the ANC. Therefore, this QUD is a case of \"not grounded\".",
+                            "new_score":            3.0,
+                            "original_qud":         "What action has the International Cricket Council taken in response to the alleged bribery of Australian players?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What action has the International Cricket Council taken in response to the alleged bribery of Australian players?",
+                            "cot_altered2top_score":     "Since this QUD is a case of \"not grounded\" and this information is not found in the ANC: (i) the police department's financial crimes investigators, and (ii) a call about the bribery allegations, I should not mention it in the new QUD. I know that: {{criteria_recap}}. I will do a rewrite to give this new QUD: {{top_score_qud}}",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            }
+                            },
+
+               "1498_4_5": {"Ko": 
+                            {"altered_qud":         "How do we know that the bighorn sheep numbered only 105 in Sierra Nevada fifteen years ago.",
+                            "rationale":            "This QUD mentions \"numbered only 105 in Sierra Nevada fifteen years ago\", which is not found in the ANC. Therefore, the content of this QUD mostly does not follow from the ANC and a reader is unlikely to raise the QUD at the point immediately after the ANC. This is a case of \"not grounded\".",
+                            "rationale_fine":       "This QUD is asking about how it was established that there were only 105 bighorn sheep in Sierra Nevada 15 years ago. The key information in the QUD -- \"the bighorn sheep numbered only 105 in Sierra Nevada fifteen years ago\" -- is found in the CTX, but it is not mentioned, or referred to, in the ANC at all, which means that none of the content of this QUD follows from the ANC. Therefore, this QUD is a case of \"not grounded\".",
+                            "new_score":            3.0,
+                            "original_qud":         "What does this mean for the future of the bighorn sheep?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What does this mean for the future of the bighorn sheep?",
+                            "cot_altered2top_score":     "Since this QUD is a case of \"not grounded\" and this information is not found in the ANC: \"the bighorn sheep numbered only 105 in Sierra Nevada fifteen years ago\", I should not mention it in the new QUD. I know that: {{criteria_recap}}. I will do a rewrite to give this new QUD: {{top_score_qud}}",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+
+                            "alpaca": 
+                            {"altered_qud":         "Why was recovery of the bighorn sheep population actually feasible and possible despite it dropping to as low as 105 in Sierra Nevada?",
+                            "rationale":            "This QUD contains the statement \"recovery is actually feasible and possible\", which is in the ANC, i.e. this QUD has some relevance to the ANC and a reader could raise something similar to it after having read up to the ANC. However, the QUD also mentions \"despite the bighorn sheep population in Sierra Nevada dropping to as low as 105\", which is not in the ANC. As such, only some content in this QUD is grounded in the ANC and this is a case of \"partially grounded\".",
+                            "rationale_fine":       "This QUD is asking for the reasons that the population of the bighorn sheep could recover. It also mentions \"despite it dropping to as low as 105 in Sierra Nevada\". The ANC mentions that recovery (of the bighorn sheep population) is shown to be actually feasible and possible, but it does not mention, or make reference to, the latter. As such, only some of the content of this QUD follows from the ANC. Therefore, this QUD is a case of \"partially grounded\".", 
+                            "new_score":            2.0,
+                            "original_qud":         "What is the significance of the Sierra Nevada bighorn sheep's return to the Great Western Divide?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What is the significance of the Sierra Nevada bighorn sheep's return to the Great Western Divide?",
+                            "cot_altered2top_score":     "Since this QUD is a case of \"partially grounded\" and this information is not found in the ANC: \"the bighorn sheep population dropping to as low as 105\", I should not mention it in the new QUD. I know that: {{criteria_recap}}. I will do a rewrite to give this new QUD: {{top_score_qud}}",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+
+                            "chatgpt": 
+                            {"altered_qud":         "What is the significance of the successful reintroduction of bighorn sheep in the Great Western Divide?",
+                            "rationale":            "This QUD mentions the \"successful reintroduction of bighorn sheep in the Great Western Divide\" which can be found in the ANC (through the use of the referring expression \"This\"). Therefore, its contents mostly follows from the ANC and so a reader could raise this QUD after having read up to the ANC. This is a case of \"fully grounded\".",
+                            "rationale_fine":       "This QUD is asking for what it means \"given the successful reintroduction of bighorn sheep in the Great Western Divide\". This piece of information is first mentioned in the CTX, but it can also be found in the ANC through the referring expression \"This\". As such, all of the content of this QUD follows from the ANC. Therefore, this QUD is a case of \"fully grounded\".", 
+                            "new_score":            1.0,
+                            "original_qud":         "What is the significance of the successful reintroduction of bighorn sheep in the Great Western Divide?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What is the significance of the successful reintroduction of bighorn sheep in the Great Western Divide?",
+                            "cot_altered2top_score":     "Since this QUD has the maximum score. There is no need to rewrite it.",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            },
+
+                            "gpt4": 
+                            {"altered_qud":         "From where does the helicopter ferrying the sheeps into Big Arroyo Canyon take off from?",
+                            "rationale":            "This QUD mentions \"helicopter ferrying the sheeps into Big Arroyo Canyon\"; while this is mentioned in the CTX, it is not found or referred to in the ANC. Therefore, the content of this QUD mostly does not follow from the ANC and a reader is unlikely to raise it at the point immediately after the ANC. This QUD is a case of \"not grounded\".",
+                            "rationale_fine":       "This QUD is asking for the location where the helicopters carrying the sheep take off from. The ANC does not mention, or make reference to, any of this information, which means that all of the content of this QUD does not follow from the ANC. Therefore, this QUD is a case of \"not grounded\".",
+                            "new_score":            3.0,
+                            "original_qud":         "What does the successful increase in the number of Sierra Nevada bighorn sheep signify for endangered species?",
+                            "original_score":       1.0,
+                            "top_score_qud":             "What does the successful increase in the number of Sierra Nevada bighorn sheep signify for endangered species?",
+                            "cot_altered2top_score":     "Since this QUD is a case of \"not grounded\" and this information is not found in the ANC: \"helicopter ferrying the sheeps into Big Arroyo Canyon\", I should not mention it in the new QUD. I know that: {{criteria_recap}}. I will do a rewrite to give this new QUD: {{top_score_qud}}",
+                            "cot_original2top_score":    "Since this QUD has the maximum score. There is no need to rewrite it."
+                            }
+                            },
+
+               "906_1_2": {"Ko": 
+                            {"altered_qud":         "What did the school principal say?",
+                            "rationale":            "This QUD asks about what the school principal says, but there has been no mention of the school principal in the ANC. Therefore, the content of this QUD mostly does not follow from the ANC and a reader is unlikely to raise the QUD at the point immediately after the ANC. This is a case of \"not grounded\".",
+                            "rationale_fine":       "This QUD is asking for what was said by the school principal. However, there is no mention of, or reference to, the principal in the ANC. Therefore, this QUD is a case of \"not grounded\".", 
+                            "new_score":            3.0,
+                            "original_qud":         "What did the student do when his school principal approached him about seeking help for mental illness?",
+                            "original_score":       2.0,
+                            "top_score_qud":             "Is the teenager being offered help?", 
+                            "cot_altered2top_score":     "Since this QUD is a case of \"not grounded\" and this information is not found in the ANC: \"the student's school principal, I should not mention it in the new QUD\". I know that: {{criteria_recap}}. I will do a rewrite to give this new QUD: {{top_score_qud}}",
+                            "cot_original2top_score":    "Since this QUD is a case of \"partially grounded\" and this information is not found in the ANC: \"when his school principal approached him about seeking help for mental illness\", I should not mention it in the new QUD. I know that: {{criteria_recap}}. I will do a rewrite to give this new QUD: {{top_score_qud}}"
+                            },
+
+                           "alpaca": 
+                           {"altered_qud":          "Did the school adminstration respond to the student's outbursts?",
+                            "rationale":            "This QUD refers to the \"student's outbursts\" at school, which has already been mentioned in the ANC (skipping school and yelling at teachers). Therefore, this QUD's contents mostly follows from the ANC and so a reader could raise this QUD after having read up to the ANC. This is a case of \"fully grounded\".",
+                            "rationale_fine":       "This QUD is asking about how the school administration responded to the student's outburst. The student's outbursts can be found mentioned in the ANC (e.g. yelling at teachers, punching holes in walls). Although the school adminstration is not mentioned explicitly, there is some information in the ANC that mentions the student's school. As such, most of the content of this QUD follows from the ANC. Therefore, this QUD is a case of \"fully grounded\".", 
+                            "new_score":            1.0,
+                            "original_qud":         "What was the teen's initial reaction when his assistant principal approached him about seeking help for mental illness?",
+                            "original_score":       2.0,
+                            "top_score_qud":             "Did the school adminstration respond to the student's outbursts?",
+                            "cot_altered2top_score":     "Since this QUD has the maximum score. There is no need to rewrite it.",
+                            "cot_original2top_score":    "Since this QUD is a case of \"partially grounded\" and this information is not found in the ANC: \"when his assistant principal approached him about seeking help for mental illness\", I should not mention it in the new QUD. I know that: {{criteria_recap}}. I will do a rewrite to give this new QUD: {{top_score_qud}}"
+                            },
+
+                           "chatgpt": 
+                           {"altered_qud":          "What was the teen's initial response when approached about seeking help for mental illness?",
+                            "rationale":            "This QUD refers to potential mental health concerns faced by the student, which has been mentioned in the ANC (observed having outbursts and paralyzing sadness, which are indicators of mental illnesses). As such, this QUD has some relevance to the ANC and a reader could raise something similar to it after having read up to the ANC. However, the ANC does not mention or suggest that the student had been approached by anyone about seeking help, so only some content in this QUD is grounded in the ANC. Therefore, this is a case of \"partially grounded\".",
+                            "rationale_fine":       "This QUD is about how the teen (the student) initially responded, after being asked about seeking help for mental illness. The teen is mentioned in the ANC, but the approach to seek mental help is not mentioned, or referred to, there. As such, only some of the content of this QUD follows from the ANC. Therefore, this QUD is a case of \"partially grounded\".", 
+                            "new_score":            2.0,
+                            "original_qud":         "What was the teen's initial response when approached about seeking help for mental illness?",
+                            "original_score":       2.0,
+                            "top_score_qud":             "Is the teenager being offered help?",
+                            "cot_altered2top_score":     "Since this QUD is a case of \"partially grounded\" and this information is not found in the ANC: \"when approached about seeking help for mental illness\", I should not mention it in the new QUD. I know that: {{criteria_recap}}. I will do a rewrite to give this new QUD: {{top_score_qud}}",
+                            "cot_original2top_score":    "Since this QUD is a case of \"partially grounded\" and this information is not found in the ANC: \"when approached about seeking help for mental illness\", I should not mention it in the new QUD. I know that: {{criteria_recap}}. I will do a rewrite to give this new QUD: {{top_score_qud}}"
+                            },
+
+                           "gpt4": 
+                           {"altered_qud":          "Has the student been offered help?",
+                            "rationale":            "The ANC discusses incidents witnessed by others about the student's difficulty accepting his father's cancer diagnosis; as such, asking if the student has been offered help follows from the ANC. Therefore, a reader could raise this QUD after having read up to the ANC and this is a case of \"fully grounded\".",
+                            "rationale_fine":       "This QUD is asking whether help has been offered to the student. The student is already mentioned in the ANC, and his trouble accepting his father's cancer diagnosis is also mentioned there; therefore, asking if he has been offered help is relevant to the ANC, As such, most of the content of this QUD follows from the ANC and this QUD is a case of \"fully grounded\".", 
+                            "new_score":            1.0,
+                            "original_qud":         "What was the teenager's initial response when the assistant principal suggested he seek help for mental illness?",
+                            "original_score":       2.0,
+                            "top_score_qud":             "Has the student been offered help?",
+                            "cot_altered2top_score":     "Since this QUD has the maximum score. There is no need to rewrite it.",
+                            "cot_original2top_score":    "Since this QUD is a case of \"partially grounded\" and this information is not found in the ANC: \"when the assistant principal suggested he seek help for mental illness\", I should not mention it in the new QUD. I know that: {{criteria_recap}}. I will do a rewrite to give this new QUD: {{top_score_qud}}"
+                            }
+                            }}}

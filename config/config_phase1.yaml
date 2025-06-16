@@ -1,0 +1,277 @@
+##### MODEL #####
+model_size:     unsloth_large
+reinitialise:   False
+do_model:       null
+bsz:            1
+dirpath:        /workspace/agentic_qud
+hub_dirpath:    /workspace/llm_models/hub
+savepath:       null
+hf_token:       null
+token_dict:     null
+load_ckpt_path: null
+pad_token:      null
+device:         null
+exp_code:       null
+exclude_same_scores: True
+insert_new_gens: [] # see codes in main_phase1.py
+insert_new_gens_mapping: null
+insert_new_gens_version: v1
+models_force_4bit: ['google/gemma-2-27b-it']
+use_optimum:    False
+models:  
+  openai_reasoning:
+    effort: medium
+  mini: 
+    phi:   microsoft/Phi-3.5-mini-instruct
+    llama: meta-llama/Llama-3.2-3B-Instruct
+    gemma: google/gemma-2-2b-it
+    qwen:  Qwen/Qwen2.5-3B-Instruct
+  minipt: # pretrained only, i.e. non-chat, RLHF
+    llama: meta-llama/Llama-3.2-3B
+    gemma: google/gemma-2-2b
+    qwen:  Qwen/Qwen2.5-3B
+  small:
+    phi:        microsoft/phi-4
+    llama:      meta-llama/Llama-3.1-8B-Instruct
+    gemma:      google/gemma-2-9b-it
+    qwen:       Qwen/Qwen2.5-7B-Instruct
+    dsr1_llama: deepseek-ai/DeepSeek-R1-Distill-Llama-8B
+    dsr1_qwen:  deepseek-ai/DeepSeek-R1-Distill-Qwen-7B   
+  smallpt:
+    llama:      meta-llama/Llama-3.1-8B
+    gemma:      google/gemma-2-9b
+    qwen:       Qwen/Qwen2.5-7B
+  large: 
+    phi:   null 
+    llama: meta-llama/Llama-3.3-70B-Instruct
+    gemma: google/gemma-2-27b-it
+    qwen:  Qwen/Qwen2.5-72B-Instruct
+  unsloth_large: 
+    # phi: loading in bfloat16 (model is only 14B)
+    phi:        microsoft/phi-4       
+    llama:      unsloth/Llama-3.3-70B-Instruct-bnb-4bit
+    gemma:      google/gemma-2-27b-it 
+    qwen:       unsloth/Qwen2.5-72B-Instruct-bnb-4bit
+    dsr1_llama: unsloth/DeepSeek-R1-Distill-Llama-70B-bnb-4bit
+    dsr1_qwen:  unsloth/DeepSeek-R1-Distill-Qwen-32B-bnb-4bit
+  closed_models: 
+    gpt4o:      gpt-4o-2024-08-06
+    o3mini:     o3-mini-2025-01-31
+    # # deepseek:   deepseek-chat 
+
+##### RANKING #####
+qud_criteria_list: [criteria2, criteria3, criteria4]
+
+##### GENERATION #####
+rerank_constrained_bs: 
+  do_constrained:   False
+  num_beams:        null
+
+gen_args:
+  do_sample:    False
+  top_p:        null
+  top_k:        null
+  temperature:  0.0
+  max_new_tokens: null
+  min_new_tokens: null
+  constraints:  null
+  num_beams:    null
+  pad_token_id: null
+  eos_token_id: null
+  rankllm: 
+    max_new_tokens: 20
+  qud_gen: 
+    max_new_tokens: 1024
+  critique_gen: 
+    max_new_tokens: 1024
+  qud_rewrite_gen: 
+    max_new_tokens: 1024
+
+ranker_args:
+  # context_size used in rankllm context size. sets maxlength of tokenizer. 
+  # could get stuck in self.get_num_tokens if too low for CoT (rec: 8192)
+  phase1_use_closed_models: True
+  phase2_model_names:     {'criteria2': ['phi', 'gemma','llama', 'qwen'],
+                          'criteria3': ['phi', 'gemma','llama', 'qwen'],
+                          'criteria4': ['phi', 'gemma','llama', 'qwen'],}
+  phase_model_names_set:  null                        
+  phase2_window_sizes:    {'criteria2': 3, 'criteria3': 3, 'criteria4': 4}
+  context_size:           8192 
+  num_few_shot_examples:  3
+  add_task_decomp_common: True
+  add_task_decomp_cot:    False
+  do_cot:                 True
+  cot_json:               True
+  cot_fine:               True
+  use_past_key_values:    True
+  num_gpus:               1
+  variable_passages:      True
+  window_size:            4
+  step_size:              null
+  top_k_candidates:       null
+  # system_message:         null
+  bypass_fsc_load:        True
+  rerank_task_name:       'qud'
+  device:                 null
+  rank_pred_seq:          null
+  rank_pred_seq_tokens:   null
+  rank_pred_seq_tokens_dec: null
+  shuffle_candidates:     False
+  print_prompts_responses: False
+  qud_min_score:          1.0
+  qud_max_score:          3.0
+
+answer_compat: 
+  do_icl :                True
+  num_few_shot_examples:  2
+  model_names:            ['llama']
+  model_sizes:            ['minipt'] #, 'mini']
+  ans_cands_form:         'all' 
+  # or "post_anc". "post_anc" gives rise to superfluous cases where there is only 1 remaining sentence 
+  add_index_nums:         True
+
+qud_gen:
+  phase2_model_names:     ['phi', 'gemma','llama', 'qwen']
+  do_icl :                True
+  num_few_shot_examples:  3
+  add_task_decomp_common: True
+  add_task_decomp_cot:    False
+  add_terminology:        True
+  do_cot:                 null
+  cot_json:               null
+  cot_fine:               null
+  use_past_key_values:    False
+
+##### EXEMPLARS & PROMPTS #####
+prompts:
+  answer_compat: 
+    system_message: 'You are an intelligent assistant that can carefully analyse an article and a question that is related to it in order to answer the question.'
+    instructions: 'I will give you a part of an article, followed by a question. I will then provide you with a number of potential candidates that will answer the question. Your task is to select the most appropriate answer candidate based on the contents of the article and the question. It is very important that you reply by repeating exactly (i.e. word-for-word) the candidate you select as the answer. Start your reply by giving the answer immediately, do not say anything else.\n'
+    prefix: |
+      {{instructions}}
+
+      ## Article: 
+      {{context}}
+
+      ## Question:
+      {{qud}}
+
+      ## Answer Candidates:
+      {{ans_cands}}
+
+      ## Answer:
+    icl_exemplars: null
+
+  rankllm:
+    system_message: 'You are an intelligent assistant that is as well-trained as a graduate linguistics student. You have the capabilities to understand a set of linguistic annotation instructions and can rank the quality of a set of Questions Under Discussion (QUD) instances for some specified Criteria and Scoring Scheme.'
+    # see https://github.com/huggingface/open-r1/blob/138df0ca44d5799fb24db2b50ff8f029c37aeca0/src/open_r1/grpo.py#L105
+    system_message_reasoning: 'A conversation between User and Assistant. The User describes a task and the Assistant solves it. The Assistant first thinks about the reasoning process in the mind and then provides the User with the answer. The reasoning process is enclosed within <think> </think> tags and the answer is enclosed within <answer> </answer> tags, i.e. <think> {reasoning process here} </think> and <answer> {answer here} </answer>. The Assistant is as well-trained as a graduate linguistics student and has the capabilities to understand a set of linguistic annotation instructions, therefore the Assistant is able to rank the quality of a set of Questions Under Discussion (QUD) instances for some specified Criteria and Scoring Scheme.'
+    prefix:
+      context_empty: '[EMPTY]'
+      common: |
+        I will provide you with {{num_cands}} attempts that were made at generating a Questions Under Discussion (QUD) instance. Each attempt is indicated by a numerical identifier [] in front of it. Your task is to rank the attempts based on their quality with respect to the Criteria (using the Scoring Scheme) specified below. 
+        
+        {{terminology}}
+        Here is the criteria that you should judge the generated QUDs for:
+      terminology: |
+        ###########
+        First of all, here are some important terminology and definitions to help you to understand the task:
+        
+        ## Terminology and definitions:
+        - "Questions Under Discussion":   this is a linguistic framework for representing discourse structure -- a piece of discourse (for e.g. a news article) can be seen as a sequence of (implicit) questions that are successively posed and answered as the discourse progresses.
+        - "QUD":                          a QUD is an (implicit) question that links two parts in a piece of discourse. In practice, a QUD is generated given the following inputs that are drawn from the piece of discourse: (i) the context; (ii) an anchor sentence, and (iii) an answer sentence. To be useful in a QUD-based representation of the piece of discourse, the QUD has to be carefully crafted to meet certain linguistic constraints with respect to the context, anchor sentence and/or answer sentence (depending on which Criteria is being assessed).
+        - "context (CTX)":                this is the established ground (i.e. information that has already been encountered in the discourse up to, but not including, the anchor sentence). The CTX can be empty (marked by a "{{context_empty}}" symbol) if the anchor sentence is the first sentence in the discourse.
+        - "anchor sentence (ANC)":        this is a sentence in the discourse that directly evokes (i.e. anchors) the QUD. The QUD should be one that a person reading up to the point of the ANC in the discourse is likely to have come to mind (i.e. the next thing the person would be curious to read is the answer to the QUD).
+        - "answer sentence (ANS)":        this is a sentence further down in the discourse from the CTX and ANC, and whose Focus (i.e. its main part) answers the QUD. The ANS (i) is a different sentence from that of the ANC, and (ii) never comes before the ANC.
+        - "Focus":                        this is the main part of a sentence (in our task here, either the ANC or the ANS). i.e. it is the most important new information that the speaker/writer wants to communicate to their audience. It is distinct from other background information in the sentence sentence. It is also termed as "at-issue" content. 
+        - "Discourse-Old":                this describes concepts (entities, events, or states) that have already been mentioned in the CTX or ANC.
+        - "Mediated":                     this describes concepts that have not been directly mentioned in the CTX or ANC, but are generally known or can be inferrable from one of the concepts that has already been mentioned (i.e. "Discourse-Old").
+        
+        ###########
+      criteria2: |
+        {{common}}
+        
+        ## Criteria:                Answer Compatibility
+        ## Definition of Criteria:  this assesses whether the QUD is appropriately answered by the answer sentence (ANS). The reason this Criteria matters is because, for a QUD to be useful, it has to be fully resolvable by the most important information of the ANS, which makes it a good link between the ANC and ANS.
+        ## Scoring Scheme:
+        - "direct and explicit":    the Focus (and only the Focus) of the ANS answers the QUD. (3 points)
+        - "unfocused":              the ANS contains the answer to the QUD; however, the answer is not the ANS's Focus. (2 points)
+        - "not answered":           the ANS does not answer the QUD. (1 point)
+        {{task_decomposition}}
+      criteria3: |
+        {{common}}
+        
+        ## Criteria:                  Givenness
+        ## Definition of Criteria:    this assesses whether the QUD only contains concepts that (i) are in the context (CTX) or the anchor sentence (ANC) (i.e. "Discourse-Old"), or else (ii) the concepts are generally known, or can be easily inferred from concepts in the CTX and/or the ANC (i.e. "Mediated"). This Criteria matters because, for a QUD to be useful, it should not leak all or part of the answer, nor should it hallucinate information. 
+        ## Scoring Scheme:
+        - "no new concepts":          all of the concept(s) mentioned in the QUD is/are either "Discourse-Old" or "Mediated". (3 points)
+        - "answer-leakage":           the QUD contains concepts that are neither "Discourse-Old" nor "Mediated". However, these new concepts can be found in the ANS, which is what distinguishes it from a case of "hallucination". (2 points)
+        - "hallucination":            the QUD contains new concepts that are neither "Discourse-Old" nor "Mediated". Furthermore, these new concepts also cannot be found in the ANS, which is what distinguishes it from a case of "answer-leakage". (1 point)
+        {{task_decomposition}}
+      criteria4: |
+        {{common}}
+
+        ## Criteria:                  Anchor Relevance
+        ## Definition of Criteria:    this assesses whether the QUD only/mostly contains information found in the ANC. The general idea of this Criteria is to establish whether a person could raise the QUD having just read the ANC (in other words, it is the most salient information up to this point of the discourse -- i.e. from the ANC -- that should be the trigger of a person's curiosity for the additional information to be sought, and the QUD should be formed to reflect this). 
+        ## Scoring Scheme:
+        - "fully grounded":           all/most of the content in the QUD follows from the ANC. (3 points)
+        - "partially grounded":       only some content in the QUD is grounded in the ANC. (2 points)
+        - "not grounded":             most/all of the content in the QUD is not from the ANC. (1 point)
+        {{task_decomposition}}
+    post: 
+      common: | 
+        
+        Rank the {{num_cands}} attempts at QUD generation above. Rank them based on their quality with respect to the Criteria and the Scoring Scheme specified. All the QUD attempts should be included and listed using identifiers and in descending order of quality. If there are several attempts that are equally good amongst themselves, order their ranking by their index number (smallest first). The output format should be [] > [], e.g., {{example_ordering}}. Only respond with the ranking results and stop immediately; do not say anything else.
+      common_reasoning_replace: {'oline': 'All the QUD attempts should be included and listed using identifiers and in descending order of quality. If there are several attempts that are equally good amongst themselves, order their ranking by their index number (smallest first). The output format should be [] > [], e.g., {{example_ordering}}. Only respond with the ranking results and stop immediately; do not say anything else.', 
+                                 'nline': "Start by thinking (be sure to use the <think> </think> tags), then answer with the ranking results (be sure to use the <answer> </answer> tags). All the QUD attempts should be included and listed using identifiers and in descending order of quality. If there are several attempts that are equally good amongst themselves, order their ranking by their index number (smallest first). The output format should be [] > [], e.g., {{example_ordering}}. Once you have responded with the ranking results, stop immediately; do not say anything else."}
+      common_cot_replace:       {'oline': 'Only respond with the ranking results and stop immediately; do not say anything else.', 
+                                 'nline': "It is very important that you return the ranking results surrounded with '[START]' and '[STOP]'. Once you have responded with the ranking results, stop immediately; do not say anything else."}
+    task_decomposition: 
+      criteria2: |
+        ## Guide to Scoring Scheme:
+        When examining each QUD Attempt, the first thing you need to do is establish whether the QUD is answered by the ANS. You must be very careful and thorough doing this; be very precise and check whether the ANS properly answers the QUD. There are two possibilities at this point -- either yes or no. If it is not, then you can immediately conclude that the QUD is a case of "not answered". If it is, then you need to go on to another step to establish if the part of the ANS that answers the QUD is the Focus of the ANS. There are again two possibilities at this point -- either yes or no. If it is not (i.e. the answer to the QUD is not the Focus of the ANS), then it is a case of "unfocused"; if it is, then it is a case of "direct and explicit".  
+
+      criteria3: |
+        ## Guide to Scoring Scheme:
+        When examining each QUD Attempt, the first thing you need to do is extract the set of concept(s) that are mentioned, or referred to, in (i) the QUD, and (ii) the CTX together with the ANC. Here, you have to be very careful to take into consideration referring expressions and count them as mentions too. You should also be careful not to consider what is being asked for in the QUD as one of the concepts. The next step is to compare the sets from (i) and (ii); you will need to decide if the concept(s) mentioned in the QUD -- i.e. set (i) -- are Discourse-Old or Mediated; meaning that all of the concept(s) in the QUD: (a) are either mentioned in the CTX and/or ANC, or (b) they can be easily inferred from the concept(s) already mentioned, or (c) they are generally known information. There are two possibilities at this point. The first is that set (i) from the QUD is a complete subset of set (ii) --- i.e. all of the concept(s) in the QUD are Discourse-Old or Mediated, and so you can immediately conclude that it is a case of "no new concepts". The second is that set (i) has concepts that are not Discourse-Old or Mediated. If so, then you need to go to the next step and check if the concept(s) that is/are not Discourse-Old or Mediated can be found in the ANS. There are again two possibilities at this point -- either yes or no. If the concept(s) that are not Discourse-Old or Mediated can be found in the ANS, then it is a case of "answer-leakage". If the concept(s) cannot be found in the ANS, then it is a case of "hallucination". 
+
+      criteria4: |
+        ## Guide to Scoring Scheme:
+        When examining each QUD Attempt, the first thing you need to do is extract the key pieces of information that is mentioned, or referred to, in (i) the QUD, and (ii) the ANC. Here, you have to be very careful to take into consideration referring expressions and count them as mentions too. You should also be careful not to consider what is being asked for as one of the key pieces of information. The next step is to compare the sets from (i) and (ii); you will need to decide if all/most, some or none of the key pieces of information mentioned in the QUD -- set (i) -- are found in set (ii).  There are three possibilities at this point. The first possibility is that set (i) from the QUD is a complete or near complete subset of set (ii), i.e. all or most of content of the QUD follows from the ANC and therefore this is a case of "fully grounded". The second possibility is that only half or less of the information in set (i) is found in set (ii), then this is a case of "partially grounded". The third possibility is that only a small amount, or none, of the information from set (i) can be found in set (ii), then this a case of "not grounded". 
+
+    icl_exemplars: null
+
+  rankllm_single_score:
+    system_message: 'You are an intelligent assistant that is as well-trained as a graduate linguistics student. You have the capabilities to understand a set of linguistic annotation instructions and can score the quality of a Questions Under Discussion (QUD) instance for some specified Criteria and Scoring Scheme.'
+    system_message_reasoning: 'A conversation between User and Assistant. The User describes a task and the Assistant solves it. The Assistant first thinks about the reasoning process in the mind and then provides the User with the answer. The reasoning process is enclosed within <think> </think> tags and the answer is enclosed within <answer> </answer> tags, i.e. <think> {reasoning process here} </think> and <answer> {answer here} </answer>. The Assistant is as well-trained as a graduate linguistics student and has the capabilities to understand a set of linguistic annotation instructions, therefore the Assistant is able to score the quality of a Questions Under Discussion (QUD) instance for some specified Criteria and Scoring Scheme.'
+    prefix:
+      context_empty: '[EMPTY]'
+      common: |
+        I will provide you with 1 attempt that was made at generating a Questions Under Discussion (QUD) instance. Your task is to score the attempt based on its quality with respect to the Criteria (using the Scoring Scheme) specified below. 
+        
+        {{terminology}}
+        Here is the criteria that you should judge the generated QUDs for:
+    post: 
+      common: | 
+        
+        Score the attempt at QUD generation above. Score it based on its quality with respect to the Criteria and the Scoring Scheme specified. Only respond with the scoring results and stop immediately; do not say anything else.
+      common_reasoning_replace: {'oline': 'Only respond with the scoring results and stop immediately; do not say anything else.', 
+                                 'nline': "Start by thinking (be sure to use the <think> </think> tags), then answer with the scoring results (be sure to use the <answer> </answer> tags). Once you have responded with the scoring results, stop immediately; do not say anything else."}
+      common_cot_replace:       {'oline': 'Only respond with the scoring results and stop immediately; do not say anything else.', 
+                                 'nline': "It is very important that you return the scoring results surrounded with '[START]' and '[STOP]'. Once you have responded with the scoring results, stop immediately; do not say anything else."}
+
+  qud_gen: 
+    system_message: You are an intelligent assistant that is as well-trained as a graduate linguistics student. You have the capabilities to understand a set of linguistic annotation instructions and can write a question that meets the requirements of the Questions Under Discussion (QUD) framework. The framework specifies a certain set of Criteria the questions must meet.
+    system_message_reasoning: A conversation between User and Assistant. The User describes a task and the Assistant solves it. The Assistant first thinks about the reasoning process in the mind and then provides the User with the answer. The reasoning process is enclosed within <think> </think> tags and the answer is enclosed within <answer> </answer> tags, (i.e. <think> {reasoning process here} </think> and <answer> {answer here} </answer>). The Assistant is as well-trained as a graduate linguistics student and has the capabilities to understand a set of linguistic annotation instructions, therefore the Assistant can write a question that meets the requirements of the Questions Under Discussion (QUD) framework. The QUD framework specifies a certain set of Criteria that the question must meet.
+    prefix: 
+      context_empty: '[EMPTY]'
+      common: |
+        I will provide you with information taken from a piece of discourse: (i) the CTX, (ii) the ANC, and (iii) the ANS. Your task is to write a question that is a QUD linking ANC and ANS, and which meets all of the Criteria listed below.
+                
+        {{terminology}}
+    post: 
+      common:    Write a QUD given the CTX, ANC and ANS above. Make sure that the QUD you write scores maximum points on all of the Criteria specified. Only respond with the QUD and stop immediately; do not say anything else.
+      common_reason: Write a QUD given the CTX, ANC and ANS above. Make sure that the QUD you write scores maximum points on all of the Criteria specified. Start by thinking (be sure to use the <think> </think> tags), then give the QUD in your answer (be sure to use the <answer> </answer> tags) and stop immediately; do not say anything else after your answer.
+      common_cot_replace:       {'oline': 'Only respond with the QUD and stop immediately; do not say anything else.', 
+                                  'nline': "It is very important that you return the QUD surrounded with '[START]' and '[STOP]'. Once you have responded with the QUD, stop immediately; do not say anything else."}
+    task_decomposition: 'Step 1: you need to extract the set of concept(s) that are mentioned, or referred to, in (i) the QUD, (ii) the ANS, and (iii) the CTX together with the ANC.  Here, you have to be very careful to take into consideration referring expressions and count them as mentions too. \nStep 2: you should form a QUD that will be answered by the ANS. \nStep 3: you must check that the QUD meets the Answer Compatibility Criteria (i.e. that the QUD is answered by the Focus - and only the Focus - of the ANS). \nStep 4: you must then check that the QUD meets the Givenness Criteria (i.e. that the QUD only contains concepts that are Discouse-Old or Mediated; which means that the the concepts in the QUDs are all mentioned in the CTX and/or the ANC, or else can be easily inferred from those there or are generally known). \nStep 5: you must check that the QUD meets the Anchor Relevance Criteria (i.e. the QUD only contains information that is found in the ANC). If the initial QUD does not meet any of these requirements, refine or rewrite the QUD to make it meet all of the Criteria.'
