@@ -11,8 +11,8 @@ def load_llm_model(cfg, model_name, model_path, model_size,
                     device_map, dtype, enable_lora, 
                     use_own_loader, optimum_bypass_bsz, do_compile_overide = False):
     import os
-    os.environ['HF_HOME'] = '/home/khan/synalp_me/llm_models'
-    os.environ['HF_HUB_CACHE'] = '/home/khan/synalp_me/llm_models/hub'
+    os.environ['HF_HOME'] = os.path.dirname(cfg.hub_dirpath)
+    os.environ['HF_HUB_CACHE'] = cfg.hub_dirpath
     if device_map not in [None, 'cpu']:
         device_map      = device_map if re.match(r'cuda:*\d*', device_map) else 'auto'
     from utils_model import load_model

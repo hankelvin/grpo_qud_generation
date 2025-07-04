@@ -1,5 +1,5 @@
 ## Generating Questions Under Discussion with GRPO post-training
-This repository holds the data, code and models in the paper, "Generating Questions Under Discussion with Reinforcement Learning using Ranking and Scoring for Reward and Evaluation".
+This repository holds the data, code and models in the paper, "[Generating Questions Under Discussion with Reinforcement Learning using Ranking and Scoring for Reward and Evaluation](https://github.com/hankelvin/grpo_qud_generation/tree/main/paper/grpo_qud_generation.pdf)".
 
 ### Preliminaries
 #### 1. Environment set-up
@@ -106,5 +106,6 @@ If you find our work useful, please cite:
     title = "Generating Questions Under Discussion with Reinforcement Learning using Ranking and Scoring for Reward and Evaluation",
     author = "Han, Kelvin and Gardent, Claire",
     month = may,
+    url = "https://github.com/hankelvin/grpo_qud_generation",
     year = "2025",}
 ```
